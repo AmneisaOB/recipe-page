@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+:root {
+  /* colors */
+  --bg-color: #f3e6d8;
+  --container-color: #e4ded8;
+  --main-font-color: #5f574e;
+  --title-color: #302d2c;
+  --highlight-color: #854632;
+  --accent-font-color: #7b284f;
+  --accent-bg-color: #fff5fa;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+  background-color: var(--bg-color);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+}
+
+img {
+  width: 650px;
+  height: 325px;
+  border-radius: 5px;
+}
+
+div {
+  margin: 12px;
+}
+
+.recipe-img {
+  margin-left: 12px;
+}
+
+.heading {
+  font-family: "Young Serif", Arial, Helvetica, sans-serif;
+  /* letter-spacing: 1px; */
+  font-weight: 400;
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.recipe-title {
+  color: var(--title-color);
+}
+
+.recipe-description {
+  font-size: 16px;
+  color: var(--main-font-color);
+}
+
+.recipe-prep {
+  background-color: var(--accent-bg-color);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.list-heading {
+  color: #7b284f;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.list-order {
+  margin: 12px;
+}
+.list-order li {
+  margin-bottom: 10px;
+  color: #7b284f;
+  padding-left: 10px;
+}
+.list-order span {
+  color: #5f574e;
+  font-weight: 700;
+  font-size: 16px;
+}
+.list-order p {
+  color: #5f574e;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.recipe-ingreds .heading {
+  color: var(--highlight-color);
+}
+
+.ingreds-list {
+  margin: 12px 18px;
+}
+
+.ingreds-list .list-item {
+  margin-bottom: 10px;
+  color: var(--main-font-color);
+  padding-left: 10px;
+  font-weight: 400;
+}
+
+.intructions .heading {
+  color: var(--highlight-color);
+}
+
+.steps {
+  margin: 12px 18px;
+}
+.steps .list-item {
+  margin-bottom: 10px;
+  color: var(--highlight-color);
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.steps .list-item span {
+  color: #5f574e;
+  font-weight: 700;
+  font-size: 16px;
+}
+.steps .list-item p {
+  color: var(--main-font-color);
+  font-weight: 400;
+}
+
+.nutrition-desc .heading {
+  color: var(--highlight-color);
+  margin-bottom: 12px;
+}
+.nutrition-desc p {
+  color: var(--main-font-color);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+}
+.grid-item {
+  border-bottom: 1px solid black;
+  padding: 20px;
+  gap: 0;
+  margin: 0;
+}
+.grid-container .name {
+  color: var(--main-font-color);
+  font-weight: 400;
+}
+.grid-container .value {
+  color: var(--highlight-color);
+  font-weight: 600;
+}
